@@ -31,6 +31,7 @@ router.post('/submit-registration-sync',function(req,res){
 
 	//Lets also store it in a file (usually it would be stored in a database);
 	db.push("/users/",user);
+	// Output the contents of the users, just to ensure that our save worked.
 	console.log(db.getData("/"))
 
 })
