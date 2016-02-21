@@ -10,6 +10,7 @@ var users = require('./routes/users');
 
 var app = express();
 //CUSTOM stuff
+app.use(express.static(path.join(__dirname, 'html')));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
